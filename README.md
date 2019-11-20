@@ -15,21 +15,16 @@ FileIO.openLast(content => {
 })
 
 // Show a prompt for the user to open a file
-var open = function() {
-    FileIO.open( (content) => {
-        // Content is the content of the filr that was read
-    })
-}
+FileIO.open( (content) => {
+    // Content is the content of the filr that was read
+})
+
 
 // Save the currently open file, no fille is open or the file no longer exista then
 // a save as dialog is opened.
-var save = function() {
-    FileIO.save(content) // content is the content to put in the file
-}
+FileIO.save(content) // content is the content to put in the file
 
 // Open a save as dialog
-var saveAs = function() {
-    FileIO.saveAs(content) // content is the content to put in the file 
-}
+FileIO.saveAs(content) // content is the content to put in the file 
 
 ```
